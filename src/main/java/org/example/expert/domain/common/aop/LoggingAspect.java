@@ -26,8 +26,6 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class LoggingAspect {
 
-    private final JwtUtil jwtUtil;
-
     @Pointcut("@annotation(org.example.expert.domain.common.annotation.Logging)")
     private void LoggingAnnotation() {
 
